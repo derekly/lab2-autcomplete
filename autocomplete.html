@@ -1,0 +1,46 @@
+<!-- CODE IS ADPATED FROM THE FOLLOWING WEBSITE: http://jqueryui.com/autocomplete/-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery AutoComplete</title>
+  
+  <!--Grabbed source file from developers.google.com jQuery Library: https://developers.google.com/speed/libraries/devguide#Libraries  -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css"/>
+  <!--Grabbed source file from developers.google.com jQuery Library: https://developers.google.com/speed/libraries/devguide#Libraries  -->
+  <script>
+  $(function() {
+    var autoCompletedNames = [
+      "Andy", 
+      "Andrew", 
+      "Bob", 
+      "Bobby", 
+      "Chuck", 
+      "Charles", 
+      "David",
+	  <!---Extra Names added for testing/fun -->
+	  "Derek",
+	  "Erin",
+	  "Kathy",
+	  "Michael",
+	  "Savannah",
+    ];
+    $( "#tags" ).autocomplete({
+      source: autoCompletedNames
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
+ 
+ 
+</body>
+</html>
